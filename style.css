@@ -1,0 +1,59 @@
+#wrapper{
+    width: 800px;
+    height: 533px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#bg {
+    position: absolute;
+    -webkit-animation-name: back;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: back;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes back {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+@keyframes back {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+
+#fg {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    -webkit-animation-name: fore;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: fore;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fore {
+    from {
+        transform: scale(1);
+        left: 100px;
+    }
+    to {
+        transform: scale(1.4);
+        left: 40px;
+    }
+}
+@keyframes fore {
+    from {
+        transform: scale(1);
+        left: 100px;
+    }
+    to {
+        transform: scale(1.4);
+        left: 40px;
+    }
+}
